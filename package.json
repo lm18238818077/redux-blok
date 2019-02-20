@@ -1,14 +1,16 @@
 {
-  "name": "redud-blog",
+  "name": "redux-blog",
   "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/webpack-dev-server --hot --inline --content-base .",
-    "build": "./node_modules/.bin/webpack"
+  "description": "a simple blog based on react and redux",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arcthur/react-book-examples"
   },
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack",
+    "start": "./node_modules/.bin/webpack-dev-server --hot --inline --content-base .",
+    "test": "mocha --compilers js:babel-register"
+  },
   "dependencies": {
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
